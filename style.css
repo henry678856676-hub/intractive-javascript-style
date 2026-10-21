@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+    color: #222;
+    margin: 0;
+    padding: 25px 15px;
+    transition: 0.3s;
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    text-align: center;
+    color: #4b42b5;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.text-area {
+    background-color: #f8f9fa;
+    border: 2px solid #d8dce5;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+}
+
+#sampleText {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    overflow-wrap: anywhere;
+    line-height: 1.6;
+    margin: 0;
+}
+
+h3 {
+    font-size: 16px;
+    margin-top: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    background-color: #5146c7;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #372e96;
+    transform: translateY(-1px);
+}
+
+.reset-section {
+    margin-top: 28px;
+    justify-content: center;
+}
+
+.reset-btn {
+    background-color: #dc3545;
+    padding: 12px 30px;
+    font-weight: bold;
+}
+
+.reset-btn:hover {
+    background-color: #a71d2a;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #171923;
+    color: #f5f5f5;
+}
+
+.dark-mode .container {
+    background-color: #252938;
+}
+
+.dark-mode h1 {
+    color: #aaa2ff;
+}
+
+.dark-mode h3 {
+    color: #f5f5f5;
+}
+
+.dark-mode .subtitle {
+    color: #ccc;
+}
+
+.dark-mode .text-area {
+    border-color: #555b70;
+}
+
+/* Mobile screen */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    button {
+        padding: 9px 11px;
+    }
+}

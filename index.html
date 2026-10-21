@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Text Styling Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Text Styling Tool</h1>
+        <p class="subtitle">Customize your text with one click!</p>
+
+        <div class="text-area" id="textArea">
+            <p id="sampleText">
+                Welcome to my Interactive Text Styling Tool!
+                You can change my color, size, font, alignment and more.
+            </p>
+        </div>
+
+        <h3>Text Color</h3>
+        <div class="buttons">
+            <button onclick="changeColor('red')">Red</button>
+            <button onclick="changeColor('blue')">Blue</button>
+            <button onclick="changeColor('green')">Green</button>
+            <button onclick="changeColor('purple')">Purple</button>
+        </div>
+
+        <h3>Font Size</h3>
+        <div class="buttons">
+            <button onclick="changeSize(2)">Increase +</button>
+            <button onclick="changeSize(-2)">Decrease −</button>
+        </div>
+
+        <h3>Font Family</h3>
+        <div class="buttons">
+            <button onclick="changeFont('Arial')">Arial</button>
+            <button onclick="changeFont('Georgia')">Georgia</button>
+            <button onclick="changeFont('Courier New')">Courier New</button>
+        </div>
+
+        <h3>Text Decoration</h3>
+        <div class="buttons">
+            <button onclick="toggleDecoration('underline')">Underline</button>
+            <button onclick="toggleDecoration('overline')">Overline</button>
+            <button onclick="toggleDecoration('line-through')">Line Through</button>
+        </div>
+
+        <h3>Bold and Italic</h3>
+        <div class="buttons">
+            <button onclick="toggleBold()">Bold</button>
+            <button onclick="toggleItalic()">Italic</button>
+        </div>
+
+        <h3>Text Alignment</h3>
+        <div class="buttons">
+            <button onclick="alignText('left')">Left</button>
+            <button onclick="alignText('center')">Center</button>
+            <button onclick="alignText('right')">Right</button>
+        </div>
+
+        <h3>Letter Case</h3>
+        <div class="buttons">
+            <button onclick="changeCase('uppercase')">UPPERCASE</button>
+            <button onclick="changeCase('lowercase')">lowercase</button>
+            <button onclick="changeCase('none')">Normal Case</button>
+        </div>
+
+        <h3>Background Color</h3>
+        <div class="buttons">
+            <button onclick="changeBackground('#fff3cd')">Yellow</button>
+            <button onclick="changeBackground('#d1ecf1')">Blue</button>
+            <button onclick="changeBackground('#d4edda')">Green</button>
+            <button onclick="changeBackground('#f8d7da')">Pink</button>
+        </div>
+
+        <h3>Display Mode</h3>
+        <div class="buttons">
+            <button onclick="toggleMode()">Dark / Light Mode</button>
+        </div>
+
+        <div class="buttons reset-section">
+            <button class="reset-btn" onclick="resetStyles()">Reset All</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
